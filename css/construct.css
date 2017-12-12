@@ -1,10 +1,11 @@
-body {
+/*body {
     background-size: cover;
     background: url('../images/construct.jpg') no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
-
+*/
+/*
 #welcome {
     position: absolute;
     display:block;
@@ -14,10 +15,38 @@ body {
     padding: 10px;
     text-align: center;
 }
-
+*/
 footer {
     position: fixed;
     bottom: 5px;
     right: 5px;
     color: rgba(0,0,0,0.8)
+}
+.slick-arrow{
+    color: black;
+}
+
+html{
+    background: url('../images/blueseaback.png') repeat;
+    text-align:center
+}
+.container{
+    margin-top:1%;
+    height:100%;
+}
+
+#carousel #leftarrow #rightarrow{
+
+}
+
+#carousel img {
+    width:100%;
+
+}
+
+#firstpage{
+
+}
+#social{
+    min-height:20%;
 }

@@ -1,0 +1,53 @@
+/* after skeleton styling and normalization.
+ */
+/* hero container, with navbar, greeting header, tags, and info box */
+#page1 {
+    height:100%;
+    max-height:960px;
+    min-height: 900px;
+    background: url("../images/seabacklowpolypattern.png") repeat;
+    text-align: center;
+}
+#nav{
+    padding-top:10px;
+    z-index: 2;
+    background:rgba(255,255,255,0.3);
+    border-radius: 25px;
+    margin: 0 auto;
+}
+#nav .button{
+    background: rgba(255,255,255,0.8);
+}
+#headline {
+    margin: 0 auto;
+
+}
+/* shoreline container, with skills and projects
+
+ */
+
+#page2 {
+    top:70px;
+    height:100%;
+    max-height:960px;
+    min-height: 900px;
+    background: url("../images/shorebacklowpolypattern.png") repeat;
+
+
+}
+
+/* beach container, with experience and about me */
+#page3 {
+    height:100%;
+    max-height:960px;
+    min-height: 900px;
+    background: url("../images/sandbacklowpolypattern.png") repeat;
+
+}
+
+/* closer container with contact me button and disclaimer */
+#page4 {
+    height:100%;
+    max-height:960px;
+    min-height: 900px;
+}

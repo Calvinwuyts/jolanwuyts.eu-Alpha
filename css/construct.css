@@ -1,0 +1,23 @@
+body {
+    background-size: cover;
+    background: url('../images/construct.jpg') no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#welcome {
+    position: absolute;
+    display:block;
+    margin: 50% auto;
+    background: rgba(255,255,255,0.8);
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: rgba(0,0,0,0.8)
+}

@@ -1,29 +1,18 @@
-/*body {
-    background-size: cover;
-    background: url('../images/construct.jpg') no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-*/
-/*
-#welcome {
-    position: absolute;
-    display:block;
-    margin: 50% auto;
-    background: rgba(255,255,255,0.8);
-    border-radius: 25px;
-    padding: 10px;
-    text-align: center;
-}
-*/
+
 footer {
     position: fixed;
     bottom: 5px;
     right: 5px;
     color: rgba(0,0,0,0.8)
 }
-.slick-arrow{
-    color: black;
+.slick-prev:before, .slick-next:before {
+    font-size: 10rem;
+    z-index: 100;
+}
+
+.slick-prev, .slick-next {
+    height:10rem;
+    width:10rem;
 }
 
 html{
@@ -53,4 +42,14 @@ html{
 }
 #social{
     min-height:20%;
+}
+a {
+    background-color: #696969;
+    color: #000;
+    margin: 0.2rem;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #39709e;
+    color:black;
 }

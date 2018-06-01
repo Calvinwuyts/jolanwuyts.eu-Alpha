@@ -175,3 +175,112 @@ section:before {
         opacity: 1;
     }
 }
+
+/* Carousel item 4 gallery */
+#fourthpage {
+    margin-top:20px;
+    margin-left:10px;
+    min-width: 630px;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 85%;
+    overflow: scroll;
+    position: absolute;
+    right: 8px;
+    left: 8px;
+}
+
+.vidresult {
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #FFA9A9;
+    border-radius: 5px;
+}
+/*every video result */
+#fourthpage a {
+    display: inline-block;
+    margin-bottom: 8px;
+    width: calc(50% - 4px);
+    margin-right: 8px;
+}
+.results a:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 60em) {
+    .results a {
+        width: calc(25% - 6px);
+    }
+
+    .results a:nth-of-type(2n) {
+        margin-right: 8px;
+    }
+
+    .results a:nth-of-type(4n) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 60em) and (min-width: 47em) {
+    .results a {
+        width: calc(33.3% - 8px);
+    }
+
+    .results a:nth-of-type(2n) {
+        margin-right: 8px;
+    }
+
+    .results a:nth-of-type(4n) {
+        margin-right: 0;
+    }
+}
+#fourthpage img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index:1;
+    vertical-align: top;
+}
+figcaption {
+    position: absolute;
+    height: 100%;
+    width:100%;
+    float: left;
+    z-index: 3;
+    margin: 0 auto;
+    text-align: center;
+    top:0;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0;
+}
+figcaption span{
+    line-height: normal;
+    display: inline-block;
+    margin-top: 50px;
+    vertical-align: middle;
+
+}
+a:hover figcaption {
+    opacity: 1;
+    transition: 1s;
+}
+.vidresult:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    z-index: 2;
+}
+.vidresult:hover:after {
+    opacity: 1;
+}

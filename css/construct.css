@@ -10,13 +10,13 @@ footer {
 }
 .slick-prev:before, .slick-next:before {
     font-size: 10rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(105,105,105,0.5);
 }
 .slick-prev, .slick-next    {
     height: 10rem;
     width: 10rem;
     z-index: 100;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(105,105,105,0.7);
 }
 html{
     background:
@@ -63,6 +63,9 @@ a:hover {
     background-color: rgba(57, 112, 158, 0.7);
     color:black;
 }
+mark {
+    background-color:rgba(105,105,105,0.5);
+}
 
 .skills {
     animation-name: skills;
@@ -70,6 +73,7 @@ a:hover {
 }
 main {
     padding: 0;
+    padding-top: 2vh;
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -77,17 +81,17 @@ main {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 section article.skills {
-    width: 500px;
+    width: 80vw;
     height: auto;
 }
 section article.skills p {
     z-index: 2;
-    color: #fff;
+    color: white;
     padding: 10px;
     position: relative;
     box-sizing: border-box;
@@ -120,15 +124,15 @@ section article.skills div:nth-child(1) span:nth-child(2) {
     animation-delay: 0s;
 }
 section article.skills div:nth-child(2) span:nth-child(2) {
-    width: 90%;
+    width: 85%;
     animation-delay: 0.05s;
 }
 section article.skills div:nth-child(3) span:nth-child(2) {
-    width: 80%;
+    width: 85%;
     animation-delay: 0.1s;
 }
 section article.skills div:nth-child(4) span:nth-child(2) {
-    width: 70%;
+    width: 75%;
     animation-delay: 0.15s;
 }
 section article.skills div:nth-child(5) span:nth-child(2) {
@@ -136,11 +140,11 @@ section article.skills div:nth-child(5) span:nth-child(2) {
     animation-delay: 0.2s;
 }
 section article.skills div:nth-child(6) span:nth-child(2) {
-    width: 60%;
+    width: 70%;
     animation-delay: 0.25s;
 }
 section article.skills div:nth-child(7) span:nth-child(2) {
-    width: 80%;
+    width: 70%;
     animation-delay: 0.3s;
 }
 section article.skills div:nth-child(8) span:nth-child(2) {
@@ -150,15 +154,16 @@ section article.skills div:nth-child(8) span:nth-child(2) {
 section:before {
     position: absolute;
     left:5px;
+    bottom:5px;
     content: "THINGS \A I'M \A GOOD \A AT";
     z-index:1000;
-    color: rgba(105,105,105,0.95);
+    color: rgba(105,105,105,0.7);
     font-size:4em;
     white-space: pre;
 }
 
 .skills {
-    animation: skills 1.25s cubic-bezier(0.17, 0.67, 0, 1);
+    animation: skills 3s cubic-bezier(0.17, 0.67, 0, 1);
 }
 @keyframes skills {
     0% {

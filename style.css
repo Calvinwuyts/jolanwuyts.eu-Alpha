@@ -103,40 +103,40 @@ section article.skills div span:nth-child(2) {
 }
 section article.skills div:nth-child(1) span:nth-child(2) {
     width: 90%;
-    animation-delay: 0s;
+    animation-delay: 5s;
 }
 section article.skills div:nth-child(2) span:nth-child(2) {
     width: 85%;
-    animation-delay: 0.05s;
+    animation-delay: 5.05s;
 }
 section article.skills div:nth-child(3) span:nth-child(2) {
     width: 85%;
-    animation-delay: 0.1s;
+    animation-delay: 5.1s;
 }
 section article.skills div:nth-child(4) span:nth-child(2) {
     width: 75%;
-    animation-delay: 0.15s;
+    animation-delay: 5.15s;
 }
 section article.skills div:nth-child(5) span:nth-child(2) {
     width: 75%;
-    animation-delay: 0.2s;
+    animation-delay: 5.2s;
 }
 section article.skills div:nth-child(6) span:nth-child(2) {
     width: 70%;
-    animation-delay: 0.25s;
+    animation-delay: 5.25s;
 }
 section article.skills div:nth-child(7) span:nth-child(2) {
     width: 70%;
-    animation-delay: 0.3s;
+    animation-delay: 5.3s;
 }
 section article.skills div:nth-child(8) span:nth-child(2) {
     width: 75%;
-    animation-delay: 0.35s;
+    animation-delay: 5.35s;
 }
 
 
 .skills {
-    animation: skills 3s cubic-bezier(0.17, 0.67, 0, 1);
+    animation: skills 5s cubic-bezier(0.17, 0.67, 0, 1);
 }
 @keyframes skills {
     0% {

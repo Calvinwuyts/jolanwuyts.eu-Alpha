@@ -19,15 +19,22 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
+    <!-- slick integration
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <!-- CSS & JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="rrssb/rrssb.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styledepr.css">
 
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="rrssb/rrssb.js"></script>
+    <script src="js/scriptdepr.js"></script>
     <!-- Favicon
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon-16x16.png">
@@ -38,32 +45,32 @@
 <body>
 <div class="container">
     <div class="row" id="welcome">
-        <div class="twelve columns u-full-width">
+        <div class="twelve columns u-full-width" id="carousel">
             <div id="firstpage">
                 <h1> Hi! I'm Jolan.<br/></h1>
                 <img src="images/profilepiccircle.png">
                 <h1>I'm Junior Collections Editor at <a href="https://www.europeana.eu">Europeana</a>, and the Europeana coordinator of the European <a href="http://v4design.eu">V4Design project</a>.</h1>
             </div>
             <div id="secondpage">
-                <h4> I studied <mark>History</mark> at Ghent University, and went on to get an Advanced Master's degree in <mark>Digital Humanities</mark> at KU Leuven.
-                    My favourite place to work is in <mark>digital libraries</mark>. I love playing with <mark>data</mark>, structuring information, and helping others finding and getting access to the knowledge they seek.
-                    In my free time, I read a lot. I also like gaming, taking pictures of clouds, collecting dinosaurs, listening to synthwave, and hugging my partner. <a href="files/Jolan%20Wuyts%20CV%20EN.pdf">Read my CV</a> to learn more about me! </h4>
-            </div>
+                <h4> I studied <mark>History</mark> at Ghent University, and went on to get an Advanced Master's degree in <mark>Digital Humanities</mark> at KU Leuven. <br/>
+                    My favourite place to work is in <mark>digital libraries</mark>. <br/>I love playing with <mark>data</mark>, structuring information, and helping others finding and getting access to the knowledge they seek. <br/>
+                    In my free time, I read a lot. I also like gaming, taking pictures of clouds, collecting dinosaurs, listening to synthwave, and hugging my partner.</h4>
+                </div>
             <div id="thirdpage">
                 <main>
-                    <section id="skills" class="twelve columns">
-                        <article id="animateskills" class="skills">
+                    <section id="skills" class="toad-fullscreen">
+                        <article class="skills">
                             <div class="t-6">
-                                <h1>THINGS</h1><p>digital library management<span></span><span class="skills"></span></p>
+                                <p>digital library management<span></span><span class="skills"></span></p>
                             </div>
                             <div class="t-6">
-                                <h1>I'M</h1><p>online editorial<span></span><span class="skills"></span></p>
+                                <p>online editorial<span></span><span class="skills"></span></p>
                             </div>
                             <div class="t-6">
-                                <h1>GOOD</h1><p>HTML5, CSS3, Jquery<span></span><span class="skills"></span></p>
+                                <p>HTML5, CSS3, Jquery<span></span><span class="skills"></span></p>
                             </div>
                             <div class="t-6">
-                                <h1>AT</h1><p>data analysis<span></span><span class="skills"></span></p>
+                                <p>data analysis<span></span><span class="skills"></span></p>
                             </div>
                             <div class="t-6">
                                 <p>RESTful APIs<span></span><span class="skills"></span></p>
@@ -78,48 +85,48 @@
                     </section>
                 </main>
             </div>
-            <div id="fourthtitle"><h1>PROJECTS</h1></div>
             <div id="fourth">
-                <div id="fourthpage">
-                    <a href="http://youtune.live" target="_blank">
-                        <figure class="vidresult">
-                            <img src="images/youtunethumb.jpg" alt="screenshot of my Youtune website project"><figcaption>
-                            <span>Youtune</span>
-                        </figcaption>
-                        </figure></a>
-                    <a href="https://github.com/Calvinwuyts/Europeanaharvest" target="_blank">
-                        <figure class="vidresult">
-                            <img src="images/europeanaharvestthumb.png" alt="screenshot of my Europeanaharvest Github repo"><figcaption>
-                            <span>Europeanaharvest</span>
-                        </figcaption>
-                        </figure></a>
-                    <a href="https://docs.google.com/spreadsheets/d/1aJNGQI3wOEBai0ZS5skSdn23jpVWD10kCbF9HiXsI3A/edit?usp=sharing" target="_blank">
-                        <figure class="vidresult">
-                            <img src="images/metricsthumb.png" alt="screenshot of the automated Europeana Collections metrics spreadsheet"><figcaption>
-                            <span>Cultural heritage collections metrics</span>
-                        </figcaption>
-                        </figure></a>
-                    <a href="https://docs.google.com/spreadsheets/d/1WPS-KJptUJ-o8SXtg00llcxq0IKJu8eO6Ege_GrLaNc/edit" target="_blank">
-                        <figure class="vidresult">
-                            <img src="images/openglamthumb.png" alt="screenshot of a tweet about the #OpenGLAM project"><figcaption>
-                            <span>OpenGLAMs</span>
-                        </figcaption>
-                        </figure></a>
-                    <a href="files/Cultivating_APIs_in_the_cultural_heritage_sector_Jolan_Wuyts_2018.pdf" target="_blank">
-                        <figure class="vidresult">
-                            <img src="images/cultivatingapis.jpeg" alt="Blauwe Vogel, 15e E BCE. Glasdia van een Minoïsch Fresco, oorspronkelijk gevonden in Knossos. Aanwezig in de Collectie van Kunstgeschiedenis KU Leuven, 1839-1939. Fotograaf onbekend. Aangeleverd aan Europeana via het Photoconsortium."><figcaption>
-                            <span>APIs for cultural heritage</span>
-                        </figcaption>
-                        </figure></a>
-                    <a href="files/Enlightened_by_the_Shadows_Jolan_Wuyts_2017.pdf" target="_blank">
-                        <figure class="vidresult">
-                            <img src="images/piratelibraries.jpg" alt="first page of my paper on pirate libraries"><figcaption>
-                            <span>pirate libraries</span>
-                        </figcaption>
-                        </figure></a>
-                </div>
+            <div id="fourthpage">
+                <a href="http://youtune.live">
+                    <figure class="vidresult">
+                        <img src="images/youtunethumb.jpg" target="_blank" alt="screenshot of my Youtune website project"><figcaption>
+                        <span>Youtune</span>
+                    </figcaption>
+                    </figure></a>
+                <a href="http://youtune.live">
+                    <figure class="vidresult">
+                        <img src="images/youtunethumb.jpg" target="_blank" alt="screenshot of my Youtune website project"><figcaption>
+                        <span>Europeanaharvest</span>
+                    </figcaption>
+                    </figure></a>
+                <a href="http://youtune.live">
+                    <figure class="vidresult">
+                        <img src="images/youtunethumb.jpg" target="_blank" alt="screenshot of my Youtune website project"><figcaption>
+                        <span>Cultural heritage collections metrics</span>
+                    </figcaption>
+                    </figure></a>
+                <a href="http://youtune.live">
+                    <figure class="vidresult">
+                        <img src="images/youtunethumb.jpg" target="_blank" alt="screenshot of my Youtune website project"><figcaption>
+                        <span>OpenGLAMs</span>
+                    </figcaption>
+                    </figure></a>
+                <a href="http://youtune.live">
+                    <figure class="vidresult">
+                        <img src="images/youtunethumb.jpg" target="_blank" alt="screenshot of my Youtune website project"><figcaption>
+                        <span>pirate libraries</span>
+                    </figcaption>
+                    </figure></a>
+                <a href="http://youtune.live">
+                    <figure class="vidresult">
+                        <img src="images/youtunethumb.jpg" target="_blank" alt="screenshot of my Youtune website project"><figcaption>
+                        <span>APIs for cultural heritage</span>
+                    </figcaption>
+                    </figure></a>
+            </div>
             </div>
         </div>
+    </div>
     <div class="row" id="social">
         <div class="twelve columns">
             <h3>Find me here:</h3>
@@ -180,10 +187,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
     </div>
 </div>
+</div>
+<footer></footer>
 </body>
 </html>
 

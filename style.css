@@ -1,75 +1,50 @@
-
-footer {
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    color: rgba(0,0,0,0.8)
-}
-.slick-prev:hover, .slick-next:hover {
-    color: rgb(255,255,255);
-}
-.slick-prev:before, .slick-next:before {
-    font-size: 10rem;
-    color: rgba(105,105,105,0.5);
-}
-.slick-prev, .slick-next    {
-    height: 10rem;
-    width: 10rem;
-    z-index: 100;
-    color: rgba(105,105,105,0.7);
-}
-html{
-    background:
-    url('../images/blueseaback.png') repeat,
-    url('../images/greenseaback.png') repeat,
-    url('../images/pinkseaback.png') repeat,
-    url('../images/redseaback.png') repeat;
+html, body{
+    background-image: url(images/lightpaperfibers.png);
+    background-repeat: repeat;
 }
 .container{
     margin-top:1%;
     height:100%;
+    margin-bottom:3%;
 }
-
-#carousel #leftarrow #rightarrow{
-
+#firstpage img {
+    max-width: 150px;
 }
-
-#carousel img {
-    max-height:200px;
-    margin: 0 auto;
-}
-
 #firstpage, p, h1 {
     text-align:center;
-
 }
 #secondpage{
     text-align: left;
-
 }
 #thirdpage{
+}
+#fourthtitle h1{
+    text-align:right;
 }
 #social{
     text-align:center;
     min-height:20%;
 }
 a {
-    background-color:rgba(105,105,105,0.7);
-    color: #000;
-    margin: 0.2rem;
+    background-color:rgba(105,105,105,0.5);
+    border-radius: 5px;
+    color: white;
     text-decoration: none;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
 }
 a:hover {
     background-color: rgba(57, 112, 158, 0.7);
     color:black;
 }
 mark {
-    background-color:rgba(105,105,105,0.5);
+    background-color:rgba(105,105,105,0.3);
+    border-radius: 5px;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
 }
-
 .skills {
     animation-name: skills;
-
 }
 main {
     padding: 0;
@@ -78,17 +53,24 @@ main {
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
-    height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
-
 section article.skills {
-    width: 80vw;
+    width: 100%;
     height: auto;
 }
+section article.skills h1 {
+    z-index: 3;
+    color: rgba(255,255,255,0.8);
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    float:left;
+    transform: translate(10px,-4px);
+}
+
 section article.skills p {
     z-index: 2;
     color: white;
@@ -104,8 +86,8 @@ section article.skills div span:nth-child(1) {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    background: rgba(0,0,0,0.3);
     height: 100%;
     width: 100%;
 }
@@ -116,7 +98,7 @@ section article.skills div span:nth-child(2) {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(57, 112, 158, 0.7);
+    background: rgba(57, 112, 158,1);
     height: 100%;
 }
 section article.skills div:nth-child(1) span:nth-child(2) {
@@ -151,16 +133,7 @@ section article.skills div:nth-child(8) span:nth-child(2) {
     width: 75%;
     animation-delay: 0.35s;
 }
-section:before {
-    position: absolute;
-    left:5px;
-    bottom:5px;
-    content: "THINGS \A I'M \A GOOD \A AT";
-    z-index:1000;
-    color: rgba(105,105,105,0.7);
-    font-size:4em;
-    white-space: pre;
-}
+
 
 .skills {
     animation: skills 3s cubic-bezier(0.17, 0.67, 0, 1);
@@ -177,65 +150,63 @@ section:before {
 }
 
 /* Carousel item 4 gallery */
-#fourthpage {
-    margin-top:20px;
-    margin-left:10px;
-    min-width: 630px;
+#fourth {
+    margin:0 auto;
     font-size: 0;
     display: flex;
     flex-wrap: wrap;
-    height: 85%;
-    overflow: scroll;
-    position: absolute;
-    right: 8px;
-    left: 8px;
+    position: relative;
 }
 
 .vidresult {
     position: relative;
-    float: left;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0);
-    border: 2px solid #FFA9A9;
+    margin: 0.2em;
+    border: 2px solid rgba(105,105,105,0.7);
     border-radius: 5px;
 }
-/*every video result */
-#fourthpage a {
-    display: inline-block;
-    margin-bottom: 8px;
-    width: calc(50% - 4px);
-    margin-right: 8px;
+
+
+#4thitemtext{
+    position: fixed;
+    overflow: visible;
+    height:100vh;
+    width:100vw;
+    bottom:2vh;
+    right:2vw;
+    z-index:2;
+    color: rgba(105,105,105,0.7);
+    font-size:4em;
 }
-.results a:nth-of-type(2n) {
+/* gallery of projects */
+#fourthpage a {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    width: calc(100% - 4px);
+    margin-right: 8px;
+    background-color: transparent;
+}
+#fourthpage a:hover{
+    background-color: transparent;
+}
+#fourthpage a:nth-of-type(2n) {
     margin-right: 0;
 }
-
-@media screen and (min-width: 60em) {
-    .results a {
-        width: calc(25% - 6px);
-    }
-
-    .results a:nth-of-type(2n) {
-        margin-right: 8px;
-    }
-
-    .results a:nth-of-type(4n) {
-        margin-right: 0;
+@media screen and (max-width: 45em) {
+    section article.skills h1 {
+        display: none;
     }
 }
-@media screen and (max-width: 60em) and (min-width: 47em) {
-    .results a {
-        width: calc(33.3% - 8px);
+@media screen and (min-width: 45em) {
+    #fourthpage a {
+        width: calc(50% - 8px);
     }
 
-    .results a:nth-of-type(2n) {
+    #fourthpage a:nth-of-type(2n) {
         margin-right: 8px;
     }
-
-    .results a:nth-of-type(4n) {
-        margin-right: 0;
-    }
 }
+
 #fourthpage img{
     width: 100%;
     height: 100%;
